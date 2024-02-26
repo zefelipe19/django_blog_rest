@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-r1!_k3^_abqua%h98^0r@17$4+p!qbby89&p^1yyc+y1%u4s44
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -40,11 +40,11 @@ INSTALLED_APPS = [
 
     # Apps
     'apps.blog',
-    'apps.d_ninja',
     'apps.drf',
+    'apps.dninja',
 
     # Dev
-    # 'django_extensions',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [

@@ -16,7 +16,8 @@ class CategoryTestCase(TestCase):
 class PostTestCase(TestCase):
     def setUp(self):
         Category.objects.create(name='Teste')
-        Post.objects.create(title='Post de Teste', content='Conteudo do post', category='Teste')
+        category = Category.objects.get(id=1)
+        Post.objects.create(title='Post de Teste', content='Conteudo do post', category=category)
         return super().setUp()
     
 
